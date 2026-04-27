@@ -110,18 +110,20 @@
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
- <body class="h-full bg-white text-gray-800 overflow-auto"><!-- Navigation -->
+ <body class="h-full bg-white text-gray-800 overflow-auto">
+  <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
    <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
-     <div class="flex items-center gap-3">
-      <img src="/web-app-manifest-192x192.png" alt="Auto Garage Control" class="h-8 w-auto" loading="lazy" onerror="console.error('Logo failed to load:', this.src); this.style.display='none';"><span class="font-heading font-bold text-lg text-gray-900" id="nav-brand">Auto Garage Control</span>
+     <div class="flex items-center gap-3"><img src="/web-app-manifest-192x192.png" alt="Auto Garage Control" class="h-8 w-auto" loading="lazy" onerror="console.error('Logo failed to load:', this.src); this.style.display='none';"><span class="font-heading font-bold text-lg text-gray-900" id="nav-brand">Auto Garage Control</span>
      </div>
-     <div class="hidden md:flex items-center gap-8"><a href="#home" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Home</a> <a href="#diensten" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Diensten</a> <a href="#over-ons" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Over ons</a> <a href="#contact" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Contact</a>
+     <div class="hidden md:flex items-center gap-8">
+      <a href="#home" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Home</a> <a href="#diensten" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Diensten</a> <a href="#over-ons" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Over ons</a> <a href="#contact" class="nav-link text-sm font-medium text-gray-600 hover:text-blue-600">Contact</a>
      </div><button id="menu-toggle" class="md:hidden p-2 text-gray-600" aria-label="Menu"> <i data-lucide="menu" style="width:24px;height:24px;"></i> </button>
     </div>
     <div id="mobile-menu" class="mobile-menu md:hidden">
-     <div class="py-3 flex flex-col gap-3 border-t border-gray-100"><a href="#home" class="text-sm font-medium text-gray-600 px-2 py-1">Home</a> <a href="#diensten" class="text-sm font-medium text-gray-600 px-2 py-1">Diensten</a> <a href="#over-ons" class="text-sm font-medium text-gray-600 px-2 py-1">Over ons</a> <a href="#contact" class="text-sm font-medium text-gray-600 px-2 py-1">Contact</a>
+     <div class="py-3 flex flex-col gap-3 border-t border-gray-100">
+      <a href="#home" class="text-sm font-medium text-gray-600 px-2 py-1">Home</a> <a href="#diensten" class="text-sm font-medium text-gray-600 px-2 py-1">Diensten</a> <a href="#over-ons" class="text-sm font-medium text-gray-600 px-2 py-1">Over ons</a> <a href="#contact" class="text-sm font-medium text-gray-600 px-2 py-1">Contact</a>
      </div>
     </div>
    </div>
@@ -129,11 +131,13 @@
   <section id="home" class="hero-bg pt-32 pb-28 sm:pt-40 sm:pb-36 relative">
    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
     <div class="max-w-2xl slide-in">
-     <div class="inline-flex items-center gap-2 bg-blue-500/15 border border-blue-400/20 rounded-full px-4 py-1.5 mb-6"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> <span class="text-blue-200 text-xs font-medium tracking-wide uppercase">Onze website is vernieuwd!</span>
+     <div class="inline-flex items-center gap-2 bg-blue-500/15 border border-blue-400/20 rounded-full px-4 py-1.5 mb-6">
+      <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> <span class="text-blue-200 text-xs font-medium tracking-wide uppercase">Onze website is vernieuwd!</span>
      </div>
      <h1 id="hero-title" class="font-heading font-900 text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-5">Auto Garage Control</h1>
      <p id="hero-subtitle" class="text-blue-100/80 text-lg sm:text-xl leading-relaxed mb-8 max-w-lg">Betrouwbare service sinds 2007 – uw vertrouwde adres in Amsterdam, Zaandam en omgeving.</p>
-     <div class="flex flex-wrap gap-3"><a href="#contact" class="cta-btn inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm"> <i data-lucide="phone" style="width:16px;height:16px;"></i> Neem contact op </a> <a href="#diensten" class="inline-flex items-center gap-2 text-blue-200 hover:text-white font-medium px-6 py-3 rounded-xl border border-blue-400/25 hover:border-blue-400/50 transition text-sm"> Onze diensten <i data-lucide="arrow-right" style="width:16px;height:16px;"></i> </a>
+     <div class="flex flex-wrap gap-3">
+      <a href="#contact" class="cta-btn inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm"> <i data-lucide="phone" style="width:16px;height:16px;"></i> Neem contact op </a> <a href="#diensten" class="inline-flex items-center gap-2 text-blue-200 hover:text-white font-medium px-6 py-3 rounded-xl border border-blue-400/25 hover:border-blue-400/50 transition text-sm"> Onze diensten <i data-lucide="arrow-right" style="width:16px;height:16px;"></i> </a>
      </div>
     </div>
    </div>
@@ -178,43 +182,50 @@
   </section><!-- Diensten -->
   <section id="diensten" class="py-20 sm:py-28 grid-pattern">
    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-14"><span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Wat wij bieden</span>
+    <div class="text-center mb-14">
+     <span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Wat wij bieden</span>
      <h2 class="font-heading font-800 text-3xl sm:text-4xl text-gray-900 mt-2">Onze Diensten</h2>
      <p class="text-gray-500 mt-3 max-w-lg mx-auto">Wij werken met de modernste apparatuur en streven naar perfectie in alles wat we doen.</p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
      <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4"><i data-lucide="shield-check" style="width:24px;height:24px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+       <i data-lucide="shield-check" style="width:24px;height:24px;color:#2563eb;"></i>
       </div>
       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">APK-keuring</h3>
       <p class="text-gray-500 text-sm leading-relaxed">Snelle en betrouwbare APK-keuringen. Wij zorgen dat uw auto veilig de weg op kan.</p>
      </div>
      <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4"><i data-lucide="wrench" style="width:24px;height:24px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+       <i data-lucide="wrench" style="width:24px;height:24px;color:#2563eb;"></i>
       </div>
       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Onderhoud &amp; Reparatie</h3>
       <p class="text-gray-500 text-sm leading-relaxed">Professioneel onderhoud en reparaties aan alle merken en modellen met vakmanschap.</p>
      </div>
      <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4"><i data-lucide="sparkles" style="width:24px;height:24px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+       <i data-lucide="sparkles" style="width:24px;height:24px;color:#2563eb;"></i>
       </div>
       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Reiniging</h3>
       <p class="text-gray-500 text-sm leading-relaxed">Professionele interieur- en exterieurreiniging voor een stralend resultaat.</p>
      </div>
      <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4"><i data-lucide="car" style="width:24px;height:24px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+       <i data-lucide="car" style="width:24px;height:24px;color:#2563eb;"></i>
       </div>
       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">In- &amp; Verkoop</h3>
       <p class="text-gray-500 text-sm leading-relaxed">Eerlijk en transparant inkopen en verkopen van auto's. Tenaamstelling op locatie.</p>
      </div>
      <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4"><i data-lucide="truck" style="width:24px;height:24px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+       <i data-lucide="truck" style="width:24px;height:24px;color:#2563eb;"></i>
       </div>
       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Auto Ophalen</h3>
       <p class="text-gray-500 text-sm leading-relaxed">Auto niet rijdbaar? Wij halen uw auto op, ongeacht de locatie.</p>
      </div>
      <div class="service-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4"><i data-lucide="clipboard-check" style="width:24px;height:24px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+       <i data-lucide="clipboard-check" style="width:24px;height:24px;color:#2563eb;"></i>
       </div>
       <h3 class="font-heading font-700 text-lg text-gray-900 mb-2">Diagnose</h3>
       <p class="text-gray-500 text-sm leading-relaxed">Nauwkeurige diagnose met de modernste apparatuur voor elk probleem.</p>
@@ -225,21 +236,25 @@
   <section id="over-ons" class="py-20 sm:py-28 bg-gradient-to-b from-gray-50 to-white">
    <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
-     <div><span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Over ons</span>
+     <div>
+      <span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Over ons</span>
       <h2 class="font-heading font-800 text-3xl sm:text-4xl text-gray-900 mt-2 mb-6">Al bijna 30 jaar uw vertrouwde garage</h2>
       <p id="about-text" class="text-gray-600 leading-relaxed mb-5">Welkom bij Auto Control – al bijna 30 jaar hét vertrouwde adres in Amsterdam, Zaandam en omgeving voor alles rondom uw auto. Met onze jarenlange ervaring staan wij klaar voor onderhoud en reparaties aan alle soorten auto's, ongeacht merk of model. Betrouwbaarheid, vakmanschap en kwaliteit vormen de basis van onze service.</p>
       <p class="text-gray-600 leading-relaxed mb-8">Auto Control staat voor service, snelheid en zekerheid – zodat u altijd met een gerust gevoel de weg op kunt.</p>
       <div class="flex flex-col gap-3">
        <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0"><i data-lucide="check" style="width:16px;height:16px;color:#2563eb;"></i>
+        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="check" style="width:16px;height:16px;color:#2563eb;"></i>
         </div><span class="text-gray-700 font-medium text-sm">Meer dan 15 jaar ervaring en vakmanschap</span>
        </div>
        <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0"><i data-lucide="check" style="width:16px;height:16px;color:#2563eb;"></i>
+        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="check" style="width:16px;height:16px;color:#2563eb;"></i>
         </div><span class="text-gray-700 font-medium text-sm">Langdurige en betrouwbare klantrelaties</span>
        </div>
        <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0"><i data-lucide="check" style="width:16px;height:16px;color:#2563eb;"></i>
+        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="check" style="width:16px;height:16px;color:#2563eb;"></i>
         </div><span class="text-gray-700 font-medium text-sm">Modernste apparatuur en technieken</span>
        </div>
       </div>
@@ -248,8 +263,7 @@
       <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-8 sm:p-10 text-white">
        <div class="flex items-center gap-3 mb-6">
         <div class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center">
-         <svg width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 17h14M5 17a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2M5 17l-1 3m15-3 1 3" /><circle cx="8.5" cy="12" r="1.5" /><circle cx="15.5" cy="12" r="1.5" />
+         <svg width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2M5 17l-1 3m15-3 1 3" /><circle cx="8.5" cy="12" r="1.5" /><circle cx="15.5" cy="12" r="1.5" />
          </svg>
         </div>
         <div>
@@ -264,14 +278,16 @@
        <p class="text-blue-100 leading-relaxed text-sm mb-6">Na een periode van verhuizing en veranderingen zijn wij weer volledig online en klaar om u van dienst te zijn. Wij werken met betrouwbare systemen en partners om u zo goed mogelijk te helpen.</p>
        <div class="grid grid-cols-2 gap-4">
         <div class="bg-white/10 rounded-xl p-4 text-center">
-         <div class="w-6 h-6 mx-auto mb-2"><i data-lucide="star" style="width:20px;height:20px;color:#ffffff;"></i>
+         <div class="w-6 h-6 mx-auto mb-2">
+          <i data-lucide="star" style="width:20px;height:20px;color:#ffffff;"></i>
          </div>
          <div class="text-blue-200 text-xs mt-1">
           Betrouwbaar
          </div>
         </div>
         <div class="bg-white/10 rounded-xl p-4 text-center">
-         <div class="w-6 h-6 mx-auto mb-2"><i data-lucide="wrench" style="width:20px;height:20px;color:#ffffff;"></i>
+         <div class="w-6 h-6 mx-auto mb-2">
+          <i data-lucide="wrench" style="width:20px;height:20px;color:#ffffff;"></i>
          </div>
          <div class="text-blue-200 text-xs mt-1">
           Vakmanschap
@@ -287,13 +303,15 @@
   </section><!-- Contact -->
   <section id="contact" class="py-20 sm:py-28">
    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-14"><span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Contact</span>
+    <div class="text-center mb-14">
+     <span class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Contact</span>
      <h2 class="font-heading font-800 text-3xl sm:text-4xl text-gray-900 mt-2">Neem Contact Op</h2>
      <p class="text-gray-500 mt-3 max-w-lg mx-auto">Bij vragen of problemen staan wij altijd klaar om te helpen.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-5 max-w-3xl mx-auto">
      <div class="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100">
-      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="phone" style="width:22px;height:22px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3">
+       <i data-lucide="phone" style="width:22px;height:22px;color:#2563eb;"></i>
       </div>
       <div class="font-heading font-600 text-gray-900 text-sm mb-1">
        Bel ons
@@ -301,7 +319,8 @@
       <div class="text-xs text-gray-400 mt-2 mb-3 pb-3 border-b border-gray-200"></div><a id="contact-phone-secondary" href="tel:06 49883865" class="text-blue-600 font-medium text-sm hover:text-blue-700"> 06 49883865 </a>
      </div>
      <div class="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100">
-      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="mail" style="width:22px;height:22px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3">
+       <i data-lucide="mail" style="width:22px;height:22px;color:#2563eb;"></i>
       </div>
       <div class="font-heading font-600 text-gray-900 text-sm mb-1">
        E-mail
@@ -311,7 +330,8 @@
       </div>
      </div>
      <div class="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100">
-      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3"><i data-lucide="map-pin" style="width:22px;height:22px;color:#2563eb;"></i>
+      <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3">
+       <i data-lucide="map-pin" style="width:22px;height:22px;color:#2563eb;"></i>
       </div>
       <div class="font-heading font-600 text-gray-900 text-sm mb-1">
        Adres
@@ -325,37 +345,49 @@
     <div class="mt-12 max-w-3xl mx-auto">
      <div class="bg-white rounded-2xl p-8 border border-gray-100">
       <div class="flex items-center gap-3 mb-6">
-       <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center"><i data-lucide="clock" style="width:20px;height:20px;color:#2563eb;"></i>
+       <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+        <i data-lucide="clock" style="width:20px;height:20px;color:#2563eb;"></i>
        </div>
        <h3 class="font-heading font-700 text-lg text-gray-900">Openingstijden</h3>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-       <div class="flex justify-between text-sm"><span class="text-gray-600">Maandag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
+       <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Maandag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
        </div>
-       <div class="flex justify-between text-sm"><span class="text-gray-600">Dinsdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
+       <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Dinsdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
        </div>
-       <div class="flex justify-between text-sm"><span class="text-gray-600">Woensdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
+       <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Woensdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
        </div>
-       <div class="flex justify-between text-sm"><span class="text-gray-600">Donderdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
+       <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Donderdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
        </div>
-       <div class="flex justify-between text-sm"><span class="text-gray-600">Vrijdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
+       <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Vrijdag</span> <span class="text-gray-900 font-medium">09:00 – 18:00</span>
        </div>
-       <div class="flex justify-between text-sm"><span class="text-gray-600">Zaterdag</span> <span class="text-gray-900 font-medium">09:00 – 17:00</span>
+       <div class="flex justify-between text-sm">
+        <span class="text-gray-600">Zaterdag</span> <span class="text-gray-900 font-medium">09:00 – 17:00</span>
        </div>
-       <div class="flex justify-between text-sm sm:col-span-2"><span class="text-gray-600">Zondag</span> <span class="text-gray-900 font-medium">Gesloten</span>
+       <div class="flex justify-between text-sm sm:col-span-2">
+        <span class="text-gray-600">Zondag</span> <span class="text-gray-900 font-medium">Gesloten</span>
        </div>
       </div>
      </div>
     </div><!-- Google Maps -->
-    <div class="mt-8 max-w-3xl mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.6728889759256!2d4.8314!3d52.4355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e335dfaf69ed%3A0x6277c32d5e77064b!2sTienlingstraat%208%2C%201507%20DD%20Zaandam!5e0!3m2!1snl!2snl!4v1234567890" width="100%" height="400" style="border:0;border-radius:1rem;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mt-8 max-w-3xl mx-auto">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.6728889759256!2d4.8314!3d52.4355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e335dfaf69ed%3A0x6277c32d5e77064b!2sTienlingstraat%208%2C%201507%20DD%20Zaandam!5e0!3m2!1snl!2snl!4v1234567890" width="100%" height="400" style="border:0;border-radius:1rem;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
    </div>
   </section><!-- Footer -->
   <footer class="bg-gray-900 py-16 sm:py-20 border-t border-gray-800">
-   <div class="max-w-6xl mx-auto px-4 sm:px-6"><!-- Footer Content Grid -->
-    <div class="grid sm:grid-cols-3 gap-8 mb-12"><!-- Kolom 1: Bedrijfsinformatie -->
+   <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <!-- Footer Content Grid -->
+    <div class="grid sm:grid-cols-3 gap-8 mb-12">
+     <!-- Kolom 1: Bedrijfsinformatie -->
      <div>
-      <div class="flex items-center gap-3 mb-4"><img src="/web-app-manifest-192x192.png" alt="Auto Garage Control" class="h-8 w-auto" loading="lazy" onerror="console.error('Logo failed to load:', this.src); this.style.display='none';">
+      <div class="flex items-center gap-3 mb-4">
+       <img src="/web-app-manifest-192x192.png" alt="Auto Garage Control" class="h-8 w-auto" loading="lazy" onerror="console.error('Logo failed to load:', this.src); this.style.display='none';">
        <div>
         <div class="font-heading font-bold text-white text-sm">
          Auto Garage Control
@@ -370,21 +402,24 @@
      <div>
       <h4 class="font-heading font-600 text-white text-sm mb-4 uppercase tracking-wide">Contact</h4>
       <div class="space-y-3">
-       <div class="flex items-start gap-3"><i data-lucide="mail" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
+       <div class="flex items-start gap-3">
+        <i data-lucide="mail" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
         <div>
          <div class="text-gray-400 text-xs">
           E-mail
          </div><a href="mailto:info@auto-control.nl" class="text-blue-400 hover:text-blue-300 font-medium text-sm transition">info@auto-control.nl</a>
         </div>
        </div>
-       <div class="flex items-start gap-3"><i data-lucide="phone" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
+       <div class="flex items-start gap-3">
+        <i data-lucide="phone" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
         <div>
          <div class="text-gray-400 text-xs">
           Telefoon
          </div><a href="tel:020 632 7582" class="text-blue-400 hover:text-blue-300 font-medium text-sm transition">020 632 7582</a>
         </div>
        </div>
-       <div class="flex items-start gap-3"><i data-lucide="smartphone" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
+       <div class="flex items-start gap-3">
+        <i data-lucide="smartphone" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
         <div>
          <div class="text-gray-400 text-xs">
           Mobiel
@@ -395,7 +430,8 @@
      </div><!-- Kolom 3: Adres -->
      <div>
       <h4 class="font-heading font-600 text-white text-sm mb-4 uppercase tracking-wide">Bezoekadres</h4>
-      <div class="flex gap-3"><i data-lucide="map-pin" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
+      <div class="flex gap-3">
+       <i data-lucide="map-pin" style="width:16px;height:16px;color:#9ca3af;margin-top:2px;flex-shrink:0;"></i>
        <div>
         <p class="text-gray-300 text-sm font-medium">Tienlingstraat 8</p>
         <p class="text-gray-400 text-sm">1507 DD Zaandam</p>
@@ -408,7 +444,21 @@
      <p class="text-gray-500 text-xs text-center">© 2025 Auto Garage Control. Alle rechten voorbehouden.</p>
     </div>
    </div>
-  </footer>
+  </footer><!-- Chatbot -->
+  <div id="chatbot-widget" class="fixed bottom-4 right-4 z-40 flex flex-col gap-3"><!-- Chat Window -->
+   <div id="chat-window" class="hidden w-80 sm:w-96 bg-white rounded-2xl shadow-2xl flex flex-col h-96 overflow-hidden border border-gray-100"><!-- Header -->
+    <div class="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4 flex items-center justify-between flex-shrink-0">
+     <div class="flex items-center gap-2"><i data-lucide="message-circle" style="width:20px;height:20px;color:#ffffff;"></i> <span class="font-heading font-600 text-white text-sm">Auto Garage Control</span>
+     </div><button id="chat-close" class="text-white hover:bg-blue-600/20 p-1 rounded transition"><i data-lucide="x" style="width:20px;height:20px;"></i></button>
+    </div><!-- Messages -->
+    <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3">
+    </div><!-- Input -->
+    <div class="border-t border-gray-100 p-3 flex-shrink-0">
+     <div class="flex gap-2"><input id="chat-input" type="text" placeholder="Typ uw vraag..." class="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"> <button id="chat-send" class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-4 py-2 transition"><i data-lucide="send" style="width:16px;height:16px;"></i></button>
+     </div>
+    </div>
+   </div><!-- Chat Button --> <button id="chat-toggle" class="w-14 h-14 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition flex items-center justify-center flex-shrink-0"><i data-lucide="message-circle" style="width:24px;height:24px;"></i></button>
+  </div>
   <script>
     const defaultConfig = {
       hero_title: 'Auto Garage Control',
@@ -523,6 +573,100 @@
     });
 
     lucide.createIcons();
+
+    // Chatbot Logic
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatWindow = document.getElementById('chat-window');
+    const chatClose = document.getElementById('chat-close');
+    const chatInput = document.getElementById('chat-input');
+    const chatSend = document.getElementById('chat-send');
+    const chatMessages = document.getElementById('chat-messages');
+    let chatOpened = false;
+
+    function addMessage(text, isBot) {
+      const msgEl = document.createElement('div');
+      msgEl.className = `flex ${isBot ? 'justify-start' : 'justify-end'}`;
+      msgEl.innerHTML = `
+        <div class="max-w-xs ${isBot ? 'bg-gray-100 text-gray-900' : 'bg-blue-600 text-white'} rounded-lg px-4 py-2 text-sm leading-relaxed">
+          ${text}
+        </div>
+      `;
+      chatMessages.appendChild(msgEl);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function getBotResponse(userMsg) {
+      const msg = userMsg.toLowerCase();
+      
+      // Openingstijden
+      if (msg.includes('openings') || msg.includes('uur') || msg.includes('hoe laat') || msg.includes('open')) {
+        return `Openingstijden:<br><br>
+Maandag t/m Vrijdag: 09:00 – 18:00<br>
+Zaterdag: 09:00 – 17:00<br>
+Zondag: Gesloten`;
+      }
+      
+      // Locatie/Adres
+      if (msg.includes('adres') || msg.includes('locatie') || msg.includes('waar') || msg.includes('zaandam') || msg.includes('amsterdam')) {
+        return `Wij zijn momenteel aan het verhuizen van:<br><br>
+<strong>Papaverweg 28</strong><br>
+1032 LG Amsterdam<br><br>
+<strong>Naar:</strong><br>
+<strong>Tienlingstraat 8</strong><br>
+1507 DD Zaandam`;
+      }
+      
+      // Contact
+      if (msg.includes('bellen') || msg.includes('telefoon') || msg.includes('contact') || msg.includes('email') || msg.includes('mail')) {
+        return `U kunt ons bereiken via:<br><br>
+📞 <strong>020 632 7582</strong><br>
+📱 <strong>06 49883865</strong><br>
+✉️ <strong>info@auto-control.nl</strong>`;
+      }
+      
+      // Default
+      return `Sorry, ik begrijp uw vraag nog niet helemaal. Ik kan u helpen met:<br><br>
+• Openingstijden<br>
+• Locatie / adres<br>
+• Contactgegevens<br><br>
+Of neem direct contact met ons op.`;
+    }
+
+    chatToggle.addEventListener('click', () => {
+      chatOpened = !chatOpened;
+      if (chatOpened) {
+        chatWindow.classList.remove('hidden');
+        if (chatMessages.children.length === 0) {
+          addMessage('Hey! Welkom bij Auto Garage Control. Wij helpen u graag. Waarmee kunnen we u helpen?', true);
+        }
+        chatInput.focus();
+      } else {
+        chatWindow.classList.add('hidden');
+      }
+    });
+
+    chatClose.addEventListener('click', () => {
+      chatOpened = false;
+      chatWindow.classList.add('hidden');
+    });
+
+    function sendMessage() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      
+      addMessage(text, false);
+      chatInput.value = '';
+      
+      setTimeout(() => {
+        const response = getBotResponse(text);
+        addMessage(response, true);
+      }, 500);
+    }
+
+    chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f2d9b33540c670f',t:'MTc3NzI5MDU5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f2d9cfd505c670f',t:'MTc3NzI5MDY2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
