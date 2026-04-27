@@ -128,7 +128,7 @@
   <section id="home" class="hero-bg pt-32 pb-28 sm:pt-40 sm:pb-36 relative">
    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
     <div class="max-w-2xl slide-in">
-     <div class="inline-flex items-center gap-2 bg-blue-500/15 border border-blue-400/20 rounded-full px-4 py-1.5 mb-6"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> <span class="text-blue-200 text-xs font-medium tracking-wide uppercase">Onze website is vernieuwd!</span>
+     <div class="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-full px-4 py-1.5 mb-6"><span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span> <span class="text-orange-700 text-xs font-medium tracking-wide">📍 Wij verhuizen naar Zaandam</span>
      </div>
      <h1 class="font-heading font-900 text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-5">Auto Control</h1>
      <p id="hero-subtitle" class="text-blue-100/80 text-lg sm:text-xl leading-relaxed mb-8 max-w-lg">Betrouwbare autoservice en reparatie sinds 2007 – uw vertrouwde adres in Amsterdam, Zaandam en omgeving.</p>
@@ -601,11 +601,12 @@ Zondag: Gesloten`;
       }
       
       // Locatie/Adres
-      if (msg.includes('adres') || msg.includes('locatie') || msg.includes('waar') || msg.includes('zaandam') || msg.includes('amsterdam') || msg.includes('vestiging') || msg.includes('plek')) {
-        return `Wij zijn momenteel aan het verhuizen van:<br><br>
+      if (msg.includes('adres') || msg.includes('locatie') || msg.includes('waar') || msg.includes('zaandam') || msg.includes('amsterdam') || msg.includes('vestiging') || msg.includes('plek') || msg.includes('verhuiz') || msg.includes('verplaats')) {
+        return `⚠️ <strong>Wij zijn aan het verhuizen!</strong><br><br>
+<strong>Oude locatie:</strong><br>
 Papaverweg 28<br>
 1032 LG Amsterdam<br><br>
-Naar:<br>
+<strong>Nieuwe locatie:</strong><br>
 Tienlingstraat 8<br>
 1507 DD Zaandam`;
       }
@@ -665,5 +666,5 @@ info@auto-control.nl`;
       if (e.key === 'Enter') sendMessage();
     });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f2da8ce83c38c7a',t:'MTc3NzI5MTE0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f2daffed7e08c7a',t:'MTc3NzI5MTQ0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
